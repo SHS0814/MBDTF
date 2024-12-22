@@ -13,26 +13,14 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\auth">
+      <UniqueIdentifier>{312bdf7b-1ba7-4481-bfdd-0ffc3eced5b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\games">
+      <UniqueIdentifier>{168063dc-680e-4cf5-bf1e-8d0faea7cace}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2048.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="mine.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="brick.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="login.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="register.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="tetris.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="menu.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -41,6 +29,24 @@
     </ClCompile>
     <ClCompile Include="score.c">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="auth\login.c">
+      <Filter>소스 파일\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="auth\register.c">
+      <Filter>소스 파일\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="games\2048.c">
+      <Filter>소스 파일\games</Filter>
+    </ClCompile>
+    <ClCompile Include="games\brick.c">
+      <Filter>소스 파일\games</Filter>
+    </ClCompile>
+    <ClCompile Include="games\mine.c">
+      <Filter>소스 파일\games</Filter>
+    </ClCompile>
+    <ClCompile Include="games\tetris.c">
+      <Filter>소스 파일\games</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
