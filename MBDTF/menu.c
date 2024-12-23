@@ -140,7 +140,7 @@ void send_game_score(const char* username, const char* game, int score) {
         const char* json_string = json_object_to_json_string(json_data);
 
         headers = curl_slist_append(headers, "Content-Type: application/json");
-        curl_easy_setopt(curl, CURLOPT_URL, "http://192.168.137.1:5000/auth/save-score");
+        curl_easy_setopt(curl, CURLOPT_URL, "http://localhost:5000/score/save-score");
         curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json_string);
         curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_callback);

@@ -39,7 +39,7 @@ void update_score_table(GtkWidget* grid) {
     curl = curl_easy_init();
     if (curl) {
         // 1등부터 10등까지의 점수 가져오기
-        const char* server_url = "http://localhost:5000/auth/get-all-scores";
+        const char* server_url = "http://localhost:5000/score/get-all-scores";
         curl_easy_setopt(curl, CURLOPT_URL, server_url);
         curl_easy_setopt(curl, CURLOPT_HTTPGET, 1L);
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);
@@ -124,7 +124,7 @@ void update_score_table(GtkWidget* grid) {
 
         // 사용자 자신의 최고 점수 가져오기
         char user_url[256];
-        snprintf(user_url, sizeof(user_url), "http://localhost:5000/auth/get-user-scores?username=%s", username);
+        snprintf(user_url, sizeof(user_url), "http://localhost:5000/score/get-user-scores?username=%s", username);
         printf("Requesting user scores with URL: %s\n", user_url);
 
         chunk.memory = malloc(1);  // 메모리 재할당
