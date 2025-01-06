@@ -1,7 +1,7 @@
 const WebSocket = require('ws');
 
 // 서버 초기화
-const server = new WebSocket.Server({ port: 8080 });
+const server = new WebSocket.Server({ host: '0.0.0.0' ,port: 1029 });
 console.log('WebSocket server running on ws://localhost:8080');
 
 // 방 관리
